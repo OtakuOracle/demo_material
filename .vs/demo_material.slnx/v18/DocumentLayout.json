@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Admin\\Desktop\\demo_material\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9A143ABB-D49F-4CCF-BD58-B12A3AD6CE26}|demo_material\\demo_material.csproj|c:\\users\\admin\\desktop\\demo_material\\demo_material\\mainwindow.axaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{9A143ABB-D49F-4CCF-BD58-B12A3AD6CE26}|demo_material\\demo_material.csproj|solutionrelative:demo_material\\mainwindow.axaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+      "AbsoluteMoniker": "D:0:0:{C94D3966-D77C-9702-0C4A-CE37971555C5}|demo_material\\demo_material.csproj|c:\\users\\admin\\desktop\\demo_material\\demo_material\\demo_material.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{C94D3966-D77C-9702-0C4A-CE37971555C5}|demo_material\\demo_material.csproj|solutionrelative:demo_material\\demo_material.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9A143ABB-D49F-4CCF-BD58-B12A3AD6CE26}|demo_material\\demo_material.csproj|c:\\users\\admin\\desktop\\demo_material\\demo_material\\mainwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9A143ABB-D49F-4CCF-BD58-B12A3AD6CE26}|demo_material\\demo_material.csproj|solutionrelative:demo_material\\mainwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C94D3966-D77C-9702-0C4A-CE37971555C5}|demo_material\\demo_material.csproj|c:\\users\\admin\\desktop\\demo_material\\demo_material\\mainwindow.axaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{C94D3966-D77C-9702-0C4A-CE37971555C5}|demo_material\\demo_material.csproj|solutionrelative:demo_material\\mainwindow.axaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C94D3966-D77C-9702-0C4A-CE37971555C5}|demo_material\\demo_material.csproj|c:\\users\\admin\\desktop\\demo_material\\demo_material\\mainwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C94D3966-D77C-9702-0C4A-CE37971555C5}|demo_material\\demo_material.csproj|solutionrelative:demo_material\\mainwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -17,12 +21,25 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 130,
+          "DockedWidth": 136,
           "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "demo_material",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\demo_material\\demo_material\\demo_material.csproj",
+              "RelativeDocumentMoniker": "demo_material\\demo_material.csproj",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\demo_material\\demo_material\\demo_material.csproj",
+              "RelativeToolTip": "demo_material\\demo_material.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-06-06T21:35:20.993Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "MainWindow.axaml",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\demo_material\\demo_material\\MainWindow.axaml",
               "RelativeDocumentMoniker": "demo_material\\MainWindow.axaml",
@@ -35,7 +52,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "MainWindow.axaml.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\demo_material\\demo_material\\MainWindow.axaml.cs",
               "RelativeDocumentMoniker": "demo_material\\MainWindow.axaml.cs",
@@ -43,9 +60,14 @@
               "RelativeToolTip": "demo_material\\MainWindow.axaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-06T21:23:25.645Z",
-              "EditorCaption": ""
-            },
+              "WhenOpened": "2026-06-06T21:23:25.645Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 124,
+          "SelectedChildIndex": -1,
+          "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
