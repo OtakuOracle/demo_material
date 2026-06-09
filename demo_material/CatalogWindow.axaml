@@ -11,24 +11,24 @@
 	<DockPanel>
 			<StackPanel Orientation="Horizontal" HorizontalAlignment="Center" DockPanel.Dock="Top" Margin="5">
 				<Image Source="Icon/icon.ico"  Height="50" Width="50" Margin="5"/>
-				<TextBox Watermark="Поиск..." Margin="5" Name="SearchBox" KeyUp="SearchBox_KeyUp"/>
+				<TextBox Watermark="Поиск..." Margin="5" Name="SearchBox" KeyUp="SearchBox_KeyUp" IsVisible="False"/>
 				
-				<ComboBox Name="SortQuantity" SelectionChanged="SortQuantity_SelectionChanged" Margin="5"  PlaceholderText="По количеству">
+				<ComboBox Name="SortQuantity" SelectionChanged="SortQuantity_SelectionChanged" Margin="5"  PlaceholderText="По количеству" IsVisible="False">
 					<ComboBoxItem>по возрастанию</ComboBoxItem>
 					<ComboBoxItem>по убыванию</ComboBoxItem>
 				</ComboBox>
 				
-				<ComboBox Name="SortCost" SelectionChanged="SortCost_SelectionChanged" Margin="5"  PlaceholderText="По цене">
+				<ComboBox Name="SortCost" SelectionChanged="SortCost_SelectionChanged" Margin="5"  PlaceholderText="По цене" IsVisible="False">
 					<ComboBoxItem>по возрастанию</ComboBoxItem>
 					<ComboBoxItem>по убыванию</ComboBoxItem>
 				</ComboBox>
 
-				<ComboBox Name="SortDiscount" SelectionChanged="SortDiscount_SelectionChanged" Margin="5"  PlaceholderText="По скидке">
+				<ComboBox Name="SortDiscount" SelectionChanged="SortDiscount_SelectionChanged" Margin="5"  PlaceholderText="По скидке" IsVisible="False">
 					<ComboBoxItem>по возрастанию</ComboBoxItem>
 					<ComboBoxItem>по убыванию</ComboBoxItem>
 				</ComboBox>
 				
-				<ComboBox Name="Filter" SelectionChanged="Filter_SelectionChanged" Margin="5" />
+				<ComboBox Name="Filter" SelectionChanged="Filter_SelectionChanged" Margin="5" IsVisible="False"/>
 				<TextBlock Name="FioTextBlock" Text="" Margin="5"/>
 			
 			</StackPanel>
@@ -38,7 +38,7 @@
 		</StackPanel>
 
 
-			<ListBox Name ="TovarsBox">
+			<ListBox Name ="TovarsBox" >
 			<ListBox.ItemTemplate>
 				<DataTemplate>
 					<Border BorderBrush="Black" BorderThickness="1" Background="{Binding ColourDiscount}">

@@ -4,6 +4,7 @@ using Avalonia.Controls;
 using Avalonia.Markup.Xaml;
 using demo_material.Models;
 using Microsoft.EntityFrameworkCore;
+using MsBox.Avalonia;
 
 namespace demo_material;
 
@@ -18,6 +19,7 @@ public partial class CatalogWindow : Window
         Get();
         LoadBox();
         FioTextBlock.Text = "Гость";
+        Visibility(3);
     }
 
 
@@ -29,6 +31,17 @@ public partial class CatalogWindow : Window
         Get();
         LoadBox();
         FioTextBlock.Text = user.FullName;
+        Visibility(user.RoleId);
+    }
+
+    public void Visibility(int roleId)
+    {
+
+        switch (roleId)
+        {
+            case 1: SearchBox.IsVisible = true; SortDiscount.IsVisible = true; SortCost.IsVisible = true; SortQuantity.IsVisible = true; Filter.IsVisible = true;  break;
+            case 2: SearchBox.IsVisible = true; SortDiscount.IsVisible = true; SortCost.IsVisible = true; SortQuantity.IsVisible = true; Filter.IsVisible = true; break;
+        }
     }
 
     private void Get()
@@ -144,7 +157,7 @@ public partial class CatalogWindow : Window
 
     }
 
-
+    
 
     private void Back_Click(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
     {
