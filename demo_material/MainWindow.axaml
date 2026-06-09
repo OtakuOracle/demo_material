@@ -3,7 +3,16 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+		x:CompileBindings="False"
         x:Class="demo_material.MainWindow"
-        Title="demo_material">
-    Welcome to Avalonia!
+        Title="Авторизация"
+		Icon="Icon/icon.png">
+	
+	<StackPanel Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center">
+		<TextBox Name="LoginTextBox" Margin="5" Watermark="Введите логин"/>
+		<TextBox Name="PasswordTextBox" Margin="5" Watermark="Введите пароль"/>
+		<Button Content="Войти" Click="Auth_Click" Margin="5" />
+		<Button Content="Войти как гость" Click="Guest_Click" Margin="5"/>
+	</StackPanel>
+	
 </Window>

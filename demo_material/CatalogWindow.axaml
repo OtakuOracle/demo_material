@@ -1,0 +1,64 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+		x:CompileBindings="False"
+        x:Class="demo_material.CatalogWindow"
+        Title="CatalogWindow"
+		Icon="Icon/icon.png">
+
+	<DockPanel>
+			<StackPanel Orientation="Horizontal" HorizontalAlignment="Center" DockPanel.Dock="Top" Margin="5">
+				<TextBox Watermark="Поиск..." Margin="5" Name="SearchBox" KeyUp="SearchBox_KeyUp"/>
+			
+			</StackPanel>
+		
+			
+				
+		<ListBox Name ="TovarsBox">
+			<ListBox.ItemTemplate>
+				<DataTemplate>
+					<Border BorderBrush="Black" BorderThickness="1" Background="{Binding ColourDiscount}">
+						<DockPanel>
+							<Border BorderBrush="Black" BorderThickness="1" DockPanel.Dock="Left">
+								<StackPanel Orientation="Vertical" VerticalAlignment="Center">
+									<Image Height="80" Width="80" Margin="5" Source="{Binding GetPhoto}"/>
+								</StackPanel>
+							</Border>
+							
+							<Border BorderBrush="Black" BorderThickness="1" DockPanel.Dock="Right">
+								<StackPanel Orientation="Vertical" VerticalAlignment="Center">
+									<TextBlock Text="{Binding Discount}"/>
+								</StackPanel>
+							</Border>
+
+							<Border BorderBrush="Black" BorderThickness="1" Margin="5">
+								<StackPanel Orientation="Vertical" HorizontalAlignment="Left" VerticalAlignment="Center">
+								
+								<StackPanel Orientation="Horizontal">
+									<TextBlock Text="{Binding Category.CategoryName}" Margin="5"/>
+									<TextBlock Text="|" Margin="5"/>
+									<TextBlock Text="{Binding Title}" Margin="5"/>
+								</StackPanel>
+								
+								<TextBlock Text="{Binding Description, StringFormat='Описание:{0}'}" Margin="5"/>
+								<TextBlock Text="{Binding Manufacturer.ManufacturerName, StringFormat='Производитель:{0}'}" Margin="5"/>
+								<TextBlock Text="{Binding Supplier.SupplierName, StringFormat='Поставщик:{0}'}" Margin="5"/>
+									 <TextBlock Text="{Binding Cost,StringFormat='Цена:{0}'}" TextDecorations="Strikethrough" Foreground="Red" Margin="5"></TextBlock>      
+                                     <TextBlock Text="{Binding Total,StringFormat='Цена со скидкой:{0}'}" Margin="5"></TextBlock>      
+								<TextBlock Text="{Binding Unit, StringFormat='Единица измерения:{0}'}" Margin="5"/>
+								<TextBlock Text="{Binding Quantity, StringFormat='Количество:{0}'}" Background="{Binding ColourQuantity}" Margin="5"/>
+								</StackPanel>
+							</Border>
+							
+							
+							
+						</DockPanel>
+					</Border>
+				</DataTemplate>
+			</ListBox.ItemTemplate>
+				
+		</ListBox>
+	</DockPanel>
+</Window>
