@@ -39,7 +39,7 @@ public partial class CatalogWindow : Window
 
         switch (roleId)
         {
-            case 1: SearchBox.IsVisible = true; SortDiscount.IsVisible = true; SortCost.IsVisible = true; SortQuantity.IsVisible = true; Filter.IsVisible = true; AddButton.IsVisible = true; break;
+            case 1: SearchBox.IsVisible = true; SortDiscount.IsVisible = true; SortCost.IsVisible = true; SortQuantity.IsVisible = true; Filter.IsVisible = true; AddButton.IsVisible = true; OrderButton.IsVisible = true;  break;
             case 2: SearchBox.IsVisible = true; SortDiscount.IsVisible = true; SortCost.IsVisible = true; SortQuantity.IsVisible = true; Filter.IsVisible = true; break;
         }
     }
@@ -163,6 +163,15 @@ public partial class CatalogWindow : Window
     {
         MainWindow mainWindow = new MainWindow();
         mainWindow.Show();
+        this.Close();
+
+    }
+
+
+    private void OrderButton_Click(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
+    {
+        OrderWindow orderWindow = new OrderWindow();
+        orderWindow.Show();
         this.Close();
 
     }

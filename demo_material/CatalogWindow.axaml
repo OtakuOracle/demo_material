@@ -36,6 +36,8 @@
 		<StackPanel Orientation="Horizontal" HorizontalAlignment="Center" DockPanel.Dock="Bottom" Margin="5">
 			<Button Content="Назад" Name="Back" Click="Back_Click" Margin="5"/>
 			<Button Content="Добавить товар" Margin="5" Name="AddButton" IsVisible="False" Click="AddButton_Click"></Button>
+			<Button Content="Заказы" Margin="5" Name="OrderButton" IsVisible="False" Click="OrderButton_Click"></Button>
+
 		</StackPanel>
 
 
