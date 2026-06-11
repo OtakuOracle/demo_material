@@ -14,7 +14,7 @@ public partial class Tovar
 
     public string Unit { get; set; } = null!;
 
-    public int Cost { get; set; }
+    public int? Cost { get; set; }
     public decimal Total
     {
         get
@@ -32,7 +32,7 @@ public partial class Tovar
 
     public int CategoryId { get; set; }
 
-    public int Discount { get; set; }
+    public int? Discount { get; set; }
 
     public string ColourDiscount
     {
@@ -50,7 +50,7 @@ public partial class Tovar
     }
 
 
-    public int Quantity { get; set; }
+    public int? Quantity { get; set; }
 
     public string ColourQuantity
     {

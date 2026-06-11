@@ -39,7 +39,7 @@ public partial class CatalogWindow : Window
 
         switch (roleId)
         {
-            case 1: SearchBox.IsVisible = true; SortDiscount.IsVisible = true; SortCost.IsVisible = true; SortQuantity.IsVisible = true; Filter.IsVisible = true;  break;
+            case 1: SearchBox.IsVisible = true; SortDiscount.IsVisible = true; SortCost.IsVisible = true; SortQuantity.IsVisible = true; Filter.IsVisible = true; AddButton.IsVisible = true; break;
             case 2: SearchBox.IsVisible = true; SortDiscount.IsVisible = true; SortCost.IsVisible = true; SortQuantity.IsVisible = true; Filter.IsVisible = true; break;
         }
     }
@@ -120,30 +120,30 @@ public partial class CatalogWindow : Window
 
     private void SearchBox_KeyUp(object? sender, Avalonia.Input.KeyEventArgs e)
     {
-        Get(); // Обновляем каталог при вводе текста в SearchBox
+        Get();
     }
 
     private void Filter_SelectionChanged(object? sender, SelectionChangedEventArgs e)
     {
-        Get(); // Обновляем каталог при изменении фильтра
+        Get();
 
     }
 
     private void SortQuantity_SelectionChanged(object? sender, SelectionChangedEventArgs e)
     {
-        Get(); // Обновляем каталог при изменении фильтра
+        Get(); 
 
     }
 
     private void SortCost_SelectionChanged(object? sender, SelectionChangedEventArgs e)
     {
-        Get(); // Обновляем каталог при изменении фильтра
+        Get(); 
 
     }
 
     private void SortDiscount_SelectionChanged(object? sender, SelectionChangedEventArgs e)
     {
-        Get(); // Обновляем каталог при изменении фильтра
+        Get(); 
 
     }
 
@@ -167,4 +167,32 @@ public partial class CatalogWindow : Window
 
     }
 
+    private void AddButton_Click(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
+    {
+
+        var add = new AddEditTovar();
+        add.Show();
+        this.Close();
+
+
+    }
+
+    private void TovarsBox_SelectionChanged(object? sender, SelectionChangedEventArgs e)
+    {
+
+        if (TovarsBox.SelectedItem is Tovar tovar)
+        {
+            if (Class1.isAdmin == true)
+            {
+                AddEditTovar addEditTovar = new AddEditTovar(localUser, tovar);
+                addEditTovar.Show();
+                this.Close();
+            }
+            else
+            {
+                var mess = MessageBoxManager.GetMessageBoxStandard("Ошибка", "Вы не можете редактировать", MsBox.Avalonia.Enums.ButtonEnum.Ok, MsBox.Avalonia.Enums.Icon.Error);
+                mess.ShowAsync();
+            }
+        }
+    }
 }

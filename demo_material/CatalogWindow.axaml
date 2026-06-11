@@ -35,10 +35,11 @@
 		
 		<StackPanel Orientation="Horizontal" HorizontalAlignment="Center" DockPanel.Dock="Bottom" Margin="5">
 			<Button Content="Назад" Name="Back" Click="Back_Click" Margin="5"/>
+			<Button Content="Добавить товар" Margin="5" Name="AddButton" IsVisible="False" Click="AddButton_Click"></Button>
 		</StackPanel>
 
 
-			<ListBox Name ="TovarsBox" >
+			<ListBox Name ="TovarsBox" SelectionChanged="TovarsBox_SelectionChanged">
 			<ListBox.ItemTemplate>
 				<DataTemplate>
 					<Border BorderBrush="Black" BorderThickness="1" Background="{Binding ColourDiscount}">
