@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("demo_material")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c069aadd8fc2f5f543d8693bdc1cff413802eecf")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+715f486c6d2a9dbf69a95dd9240b3a2edb829b04")]
 [assembly: System.Reflection.AssemblyProductAttribute("demo_material")]
 [assembly: System.Reflection.AssemblyTitleAttribute("demo_material")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
